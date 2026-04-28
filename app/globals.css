@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* GCOC brand colors — GCOC_Brand_Identity_Guide_v1.1 */
+:root {
+  --gcoc-navy: #0e2a5a;
+  --gcoc-teal: #0e6b6e;
+  --gcoc-aqua: #22a7c7;
+  --gcoc-green: #45be6a;
+  --gcoc-slate: #5a6e73;
+  --gcoc-mist: #eff6f7;
+
+  --canvas: #ffffff;
+  --surface: #ffffff;
+  --surface-alt: var(--gcoc-mist);
+  --foreground: var(--gcoc-navy);
+  --foreground-strong: #0a1f44;
+  --body: #1f2a44;
+  --muted: var(--gcoc-slate);
+  --primary: var(--gcoc-navy);
+  --primary-hover: #0a1f44;
+  --primary-foreground: #ffffff;
+  --secondary: var(--gcoc-teal);
+  --secondary-foreground: #ffffff;
+  --accent: var(--gcoc-aqua);
+  --accent-foreground: #ffffff;
+  --cta: var(--gcoc-green);
+  --cta-hover: #36a356;
+  --cta-foreground: #ffffff;
+  --border: color-mix(in srgb, var(--gcoc-slate) 18%, #ffffff);
+  --border-strong: color-mix(in srgb, var(--gcoc-slate) 32%, #ffffff);
+  --ring: var(--gcoc-aqua);
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-foreground: var(--foreground);
+  --color-foreground-strong: var(--foreground-strong);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-navy: var(--gcoc-navy);
+  --color-teal: var(--gcoc-teal);
+  --color-aqua: var(--gcoc-aqua);
+  --color-green: var(--gcoc-green);
+  --color-slate: var(--gcoc-slate);
+  --color-mist: var(--gcoc-mist);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-cta: var(--cta);
+  --color-cta-hover: var(--cta-hover);
+  --color-cta-foreground: var(--cta-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-ring: var(--ring);
+  --font-sans: Arial, "Helvetica Neue", Helvetica, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gcoc-aqua) 35%, transparent);
+  color: var(--foreground-strong);
+}
