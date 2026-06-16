@@ -176,19 +176,24 @@ export const leadership = {
   board: [
     {
       name: "Christoph Hofstetter, MD, PhD",
-      role: "Founder",
-      description: "Spine surgeon and clinical researcher",
+      role: "Founder, Chair and President",
+      description: "Spine surgeon and clinical researcher; mission and scientific leadership",
     },
     {
-      name: "Mark Mahan, MD",
-      role: "Founding Board",
-      description: "Spine surgeon and multi-institutional research leader",
+      name: "Galal Elsayed, MD",
+      role: "Director of Spine Outcomes and Digital Research Innovation",
+      description: "Spine surgeon, expert in clinical registries and advanced analytics",
     },
     {
       name: "Cathryn Payne",
-      role: "Founding Board",
-      description: "Operations and program leadership",
+      role: "Director / Secretary",
+      description: "Operations and program leadership; corporate records and minutes",
     },
+    {
+      name: "Wolfgang Ries",
+      role: "Member",
+      description: "University Liaison; research oversight and governance",
+    }
   ],
   closing:
     "The Collaborative is structured to maintain scientific independence from any commercial entity. All research outputs and benchmarks are governed by board-approved policies that prioritize patient benefit, scientific integrity, and transparent reporting.",
