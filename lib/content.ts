@@ -7,8 +7,8 @@ export const site = {
     "Turning Clinical Experience into Evidence for the Public Good.",
   description:
     "An independent 501(c)(3) nonprofit research and data-governance organization. GCOC provides a trusted framework for multicenter outcomes research, responsible data stewardship, and patient-centered benchmarking across spine and musculoskeletal care.",
-  location: "Bellevue, Washington",
-  fullAddress: "Spaces Bellevue (Lincoln Square), Bellevue, Washington",
+  location: "Spokane, Washington",
+  fullAddress: "522 W Riverside Ave Suite N, Spokane, WA 99201-0581, United States",
 } as const;
 
 export const nav = [
@@ -193,6 +193,11 @@ export const leadership = {
       name: "Wolfgang Ries",
       role: "Member",
       description: "University Liaison; research oversight and governance",
+    },
+    {
+      name: "Derek Zhi",
+      role: "Member",
+      description: "Information Technology",
     }
   ],
   closing:
@@ -282,7 +287,7 @@ export const about = {
 export const footer = {
   brandLine: site.tagline,
   description:
-    "Independent nonprofit research and data-governance organization based in Bellevue, WA.",
+    "Independent nonprofit research and data-governance organization. UBI Number: 606 248 708",
   contactHeadline: "Contact",
   contactLines: [
     site.fullAddress,
