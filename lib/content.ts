@@ -180,11 +180,6 @@ export const leadership = {
       description: "Spine surgeon and clinical researcher; mission and scientific leadership",
     },
     {
-      name: "Galal Elsayed, MD",
-      role: "Director of Spine Outcomes and Digital Research Innovation",
-      description: "Spine surgeon, expert in clinical registries and advanced analytics",
-    },
-    {
       name: "Cathryn Payne",
       role: "Director / Secretary",
       description: "Operations and program leadership; corporate records and minutes",
