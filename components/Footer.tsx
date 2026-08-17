@@ -61,9 +61,15 @@ export function Footer() {
               {footer.contactHeadline}
             </p>
             <ul className="mt-4 space-y-2 text-sm text-white/85">
-              {footer.contactLines.map((line) => (
-                <li key={line}>{line}</li>
-              ))}
+              <li>{footer.address}</li>
+              <li>
+                <a
+                  href={`mailto:${footer.email}`}
+                  className="transition-colors hover:text-white focus-visible:underline"
+                >
+                  {footer.email}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

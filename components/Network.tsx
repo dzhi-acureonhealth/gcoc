@@ -29,30 +29,14 @@ export function Network() {
           <div>
             <div className="rounded-2xl border border-border bg-mist/60 p-6 sm:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-aqua">
-                Founding partner network
+                {network.partnerEyebrow}
               </p>
               <p className="mt-2 text-lg font-bold tracking-tight text-foreground-strong">
-                Endoscopic Spine Research Group (ESRG)
+                {network.partnerName}
               </p>
-              <p className="mt-2 text-sm leading-relaxed text-body">
-                Multi-center consortium of spine surgeons at leading academic
-                medical centers conducting IRB-approved outcomes research on
-                full-endoscopic spine surgery.
+              <p className="mt-3 text-sm leading-relaxed text-body">
+                {network.partnerDescription}
               </p>
-              <ul className="mt-6 grid gap-x-6 gap-y-2 sm:grid-cols-2">
-                {network.institutions.map((institution) => (
-                  <li
-                    key={institution}
-                    className="flex items-start gap-2 text-sm text-body"
-                  >
-                    <span
-                      aria-hidden
-                      className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-green"
-                    />
-                    {institution}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>

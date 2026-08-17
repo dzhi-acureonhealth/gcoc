@@ -6,27 +6,37 @@ export const site = {
   translationalLine:
     "Turning Clinical Experience into Evidence for the Public Good.",
   description:
-    "An independent 501(c)(3) nonprofit research and data-governance organization. GCOC provides a trusted framework for multicenter outcomes research, responsible data stewardship, and patient-centered benchmarking across spine and musculoskeletal care.",
-  location: "Spokane, Washington",
-  fullAddress: "522 W Riverside Ave Suite N, Spokane, WA 99201-0581, United States",
+    "A Washington nonprofit corporation providing a trusted framework for multicenter outcomes research, responsible data stewardship, and patient-centered benchmarking across spine and musculoskeletal care. Application for federal tax exemption under Section 501(c)(3) is pending.",
+  location: "Bellevue, Washington",
+  principalOffice:
+    "Spaces Bellevue — Lincoln Square, 500 108th Avenue NE, Bellevue, WA 98004",
+  fullAddress:
+    "Spaces Bellevue — Lincoln Square, 500 108th Avenue NE, Bellevue, WA 98004",
+  email: "info@gcoc.org",
+  ubi: "606 248 708",
+  ein: "42-3624885",
+  heroBadge: "Washington Nonprofit · Bellevue, WA",
+  taxStatus:
+    "Global Clinical Outcomes Collaborative is a Washington nonprofit corporation (UBI 606 248 708; EIN 42-3624885). Our application for recognition of federal tax exemption under Section 501(c)(3) of the Internal Revenue Code is pending. If recognition is granted, it is generally effective retroactively to the date of incorporation.",
 } as const;
 
 export const nav = [
-  { label: "Mission", href: "#mission" },
-  { label: "What We Do", href: "#what-we-do" },
-  { label: "Network", href: "#network" },
-  { label: "Leadership", href: "#leadership" },
-  { label: "About", href: "#about" },
-  { label: "Support", href: "#support" },
+  { label: "Mission", href: "/#mission" },
+  { label: "What We Do", href: "/#what-we-do" },
+  { label: "Network", href: "/#network" },
+  { label: "Leadership", href: "/#leadership" },
+  { label: "Governance and Transparency", href: "/governance/" },
+  { label: "About", href: "/#about" },
+  { label: "Support", href: "/#support" },
 ] as const;
 
 export const hero = {
   eyebrow: "A nonprofit collaborative for patient-centered outcomes research",
   headline: "Better recovery begins with better evidence.",
   subcopy:
-    "Global Clinical Outcomes Collaborative is an independent 501(c)(3) nonprofit that brings surgeons, hospitals, universities, and researchers together to study how patients actually recover after spine and musculoskeletal care. We provide trusted governance for multi-center clinical data so that everyday clinical experience can become evidence that improves care for future patients.",
-  primaryCta: { label: "Support Our Mission", href: "#support" },
-  secondaryCta: { label: "Learn How We Work", href: "#what-we-do" },
+    "Global Clinical Outcomes Collaborative is a Washington nonprofit that brings surgeons, hospitals, universities, and researchers together to study how patients actually recover after spine and musculoskeletal care. We provide trusted governance for multi-center clinical data so that everyday clinical experience can become evidence that improves care for future patients.",
+  primaryCta: { label: "Get Involved", href: "/#get-involved" },
+  secondaryCta: { label: "Learn How We Work", href: "/#what-we-do" },
 } as const;
 
 export const mission = {
@@ -34,7 +44,7 @@ export const mission = {
   headline: "Turning real-world recovery into better care.",
   body: "To improve patient outcomes in spine and musculoskeletal medicine by supporting collaborative clinical research, responsible data stewardship, transparent benchmarking, and evidence-based clinical improvement.",
   legal:
-    "We are organized exclusively for charitable, scientific, and educational purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code. Our work fosters independent scientific collaboration among surgeons, hospitals, universities, and researchers — with the goal of transforming real-world clinical experience into actionable evidence for the public benefit.",
+    "We are organized exclusively for charitable, scientific, and educational purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code. Our application for recognition of federal tax exemption is pending. Our work fosters independent scientific collaboration among surgeons, hospitals, universities, and researchers — with the goal of transforming real-world clinical experience into actionable evidence for the public benefit.",
   values: [
     {
       title: "Trust",
@@ -133,6 +143,8 @@ export const approach = {
       label: "surgeons across leading academic medical centers",
     },
   ],
+  attribution:
+    "Data collected through the SPINEHealthie platform by ESRG surgeons at participating academic medical centers. Governance of the platform and registry is transitioning to GCOC under license from the University of Washington.",
   quote: {
     text: "Being able to share my progress with my care team and actually see my recovery on a graph made me feel connected and reassured.",
     attribution: "Patient, post-surgical recovery program",
@@ -143,70 +155,64 @@ export const approach = {
 
 export const network = {
   eyebrow: "Participating Network",
-  headline: "A growing community of clinical and academic partners.",
-  body: "The Collaborative supports specialty-specific research networks that meet its scientific and governance standards. Our founding partner network is the Endoscopic Spine Research Group (ESRG), a multi-center consortium of spine surgeons at leading academic medical centers conducting IRB-approved outcomes research on full-endoscopic spine surgery. ESRG demonstrates what is possible when surgeon-led collaboration is paired with modern digital tools — and the Collaborative provides its long-term nonprofit home.",
-  institutions: [
-    "University of Washington",
-    "Washington University in St. Louis",
-    "Vanderbilt University",
-    "Weill Cornell Medicine",
-    "Duke Health",
-    "University of Utah",
-    "University of South Florida",
-    "Texas Back Institute",
-    "Houston Methodist",
-    "University of Miami",
-    "SUNY Upstate Medical University",
-    "Mayo Clinic",
-    "Barrow Neurological Institute",
-    "University of Wisconsin–Madison",
-    "UC Davis",
-    "University of Calgary",
-    "Stanford Medicine",
-  ],
+  headline: "A growing community of clinical collaborators.",
+  body: "Our founding scientific network, the Endoscopic Spine Research Group (ESRG), brings together more than 30 spine surgeons affiliated with leading academic medical centers across North America.",
+  partnerName: "Endoscopic Spine Research Group (ESRG)",
+  partnerEyebrow: "Founding scientific network",
+  partnerDescription:
+    "A surgeon network conducting IRB-approved outcomes research on full-endoscopic spine surgery. ESRG demonstrates what is possible when surgeon-led collaboration is paired with modern digital tools — and the Collaborative is being built as its long-term nonprofit home.",
   footnote:
-    "Listed institutions reflect the affiliations of participating surgeons in the ESRG research network. Additional sites are pending administrative approval. The Collaborative welcomes new specialty networks aligned with its scientific and governance principles.",
+    "Named institutions will be listed as sites execute participation agreements. The Collaborative welcomes new specialty networks aligned with its scientific and governance principles.",
 } as const;
 
 export const leadership = {
   eyebrow: "Leadership & Governance",
-  headline: "Independent. Surgeon-led. Patient-centered.",
-  body: "The Collaborative is governed by a board of practicing surgeons and clinical scientists committed to independent, evidence-based research. Our founding leadership combines clinical expertise with deep experience in multi-institutional research and digital health.",
-  boardLabel: "Founding Board",
+  headline: "Surgeon-led. Patient-centered.",
+  body: "The Collaborative is governed by a board of directors committed to evidence-based research and responsible data stewardship. Our founding leadership combines clinical expertise with experience in multi-institutional research and operations.",
+  boardLabel: "Board of Directors",
   board: [
     {
       name: "Christoph Hofstetter, MD, PhD",
-      role: "Founder, Chair and President",
-      description: "Spine surgeon and clinical researcher; mission and scientific leadership",
+      role: "Founder, Chair & President",
+      description:
+        "Spine surgeon and clinical researcher; mission and scientific leadership.",
     },
     {
       name: "Cathryn Payne",
-      role: "Director / Secretary",
-      description: "Operations and program leadership; corporate records and minutes",
+      role: "Director & Secretary",
+      description:
+        "Operations and program leadership; corporate records and minutes.",
     },
     {
       name: "Wolfgang Ries",
-      role: "Member",
-      description: "University Liaison; research oversight and governance",
+      role: "Director",
+      description: "University liaison; research oversight and governance.",
     },
+  ],
+  operationsLabel: "Technology & Operations",
+  operations: [
     {
       name: "Derek Zhi",
-      role: "Member",
-      description: "Information Technology",
-    }
+      role: "Technology & Operations",
+      description: "Information technology and technical operations.",
+    },
   ],
   closing:
-    "The Collaborative is structured to maintain scientific independence from any commercial entity. All research outputs and benchmarks are governed by board-approved policies that prioritize patient benefit, scientific integrity, and transparent reporting.",
+    "The Collaborative is structured to maintain scientific independence from any commercial entity. All research outputs and benchmarks are governed by board-approved policies that prioritize patient benefit, scientific integrity, and transparent reporting. Related-party transactions are subject to the conflict-of-interest safeguards in GCOC’s Bylaws.",
+  governanceCta: {
+    label: "View Governance and Transparency",
+    href: "/governance/",
+  },
 } as const;
 
 export const support = {
   eyebrow: "Support Our Work",
-  headline: "Help us build the evidence base patients deserve.",
+  headline: "Learn about supporting the Collaborative’s work.",
   intro:
-    "Every patient’s recovery tells a story — and too often, that story is lost after the patient leaves the hospital. Your support helps us capture, study, and learn from real-world recovery so that future patients receive safer, more effective, and more personalized care.",
-  whyHeadline: "Why your gift matters",
-  why: "As an independent 501(c)(3) nonprofit, the Collaborative depends on philanthropic support to preserve the scientific independence that makes our work trustworthy. Donations directly fund the research infrastructure, governance work, and educational programs that no single hospital, surgeon, or company can sustain alone.",
-  enablesHeadline: "What your support enables",
+    "The Collaborative’s research, data stewardship, and education programs depend on people and institutions who share our commitment to patient-centered evidence. To learn about supporting this work, contact us.",
+  whyHeadline: "Tax-exempt status",
+  why: "GCOC’s application for 501(c)(3) recognition is pending; we will update this page when our determination is received.",
+  enablesHeadline: "What this work enables",
   enables: [
     "Multi-center research studies that follow patients across the full arc of recovery, not just at fixed clinic visits.",
     "Independent data governance that protects the integrity of patient-reported outcomes.",
@@ -214,15 +220,8 @@ export const support = {
     "Patient-centered benchmarking that gives hospitals a meaningful mirror for the care they deliver.",
     "Training and educational resources for the next generation of clinical researchers.",
   ],
-  waysHeadline: "Ways to give",
-  ways: [
-    "Make a tax-deductible individual or family contribution.",
-    "Establish a named research fund or program in your area of interest.",
-    "Partner as an institutional or foundation funder of a specific study or initiative.",
-    "Include the Collaborative in your estate or legacy planning.",
-  ],
-  primaryCta: { label: "Donate", href: "#contact" },
-  secondaryCta: { label: "Partner With Us", href: "#contact" },
+  primaryCta: { label: "Contact Us", href: "/#contact" },
+  secondaryCta: { label: "Get Involved", href: "/#get-involved" },
 } as const;
 
 export const getInvolved = {
@@ -246,11 +245,12 @@ export const getInvolved = {
         "Help us define what high-quality recovery actually looks like.",
     },
     {
-      title: "Industry and foundation partners",
-      description: "Support pre-competitive clinical evidence development.",
+      title: "Industry data partners",
+      description:
+        "GCOC operates an industry data-partnership program with published criteria, standard participation tiers, standard flow-down protections, and standard pricing, open to qualified entities that meet its governance requirements. Program revenue supports the Collaborative’s charitable research, benchmarking, and education mission. Program criteria will be published when the Board adopts the program policy.",
     },
   ],
-  cta: { label: "Contact Us", href: "#contact" },
+  cta: { label: "Contact Us", href: "/#contact" },
 } as const;
 
 export const about = {
@@ -263,42 +263,81 @@ export const about = {
   ],
   meta: [
     {
-      label: "Where we are",
+      label: "Principal office",
       value: site.fullAddress,
     },
     {
       label: "Tax status",
-      value:
-        "Recognized under Section 501(c)(3) of the Internal Revenue Code. Contributions are tax-deductible to the extent allowed by law.",
+      value: site.taxStatus,
     },
     {
       label: "Independence",
       value:
-        "Independent nonprofit research and data-governance organization. Related ecosystem brand to AcureonHealthcare; not owned, controlled, or directed by any commercial entity.",
+        "GCOC shares certain visual brand elements with Acureon Health LLC to signal a related ecosystem and shared origin. GCOC is not owned, controlled, or directed by Acureon Health LLC or any commercial entity; the organizations operate under separate boards and governance. Transactions between GCOC and any related commercial entity are subject to the conflict-of-interest safeguards in GCOC’s Bylaws.",
+    },
+  ],
+} as const;
+
+export const governance = {
+  eyebrow: "Governance & Transparency",
+  headline: "How the Collaborative is governed.",
+  intro:
+    "This page discloses GCOC’s directors and officers, related-party safeguards, and the documents we will publish as they are adopted or become available. It is intended for contracting offices, collaborators, and the public record that accompanies our application for federal tax exemption.",
+  sections: [
+    {
+      title: "Board of Directors and Officers",
+      body: [
+        "GCOC is a Washington nonmembership nonprofit corporation. The Board of Directors is the governing body.",
+        "Christoph Hofstetter, MD, PhD — Founder, Chair & President. Cathryn Payne — Director & Secretary. Wolfgang Ries — Director.",
+      ],
+    },
+    {
+      title: "Bylaws",
+      body: [
+        "A summary of the Bylaws, and the Bylaws themselves, will be posted here once adopted by the Board.",
+      ],
+    },
+    {
+      title: "Conflict of interest",
+      body: [
+        "Directors, officers, and other covered persons are required to disclose actual and potential conflicts and to recuse themselves from deliberations and votes in which they have a conflicting interest. The Board reviews related-party matters under these safeguards before any transaction is approved.",
+      ],
+    },
+    {
+      title: "Related-party safeguards",
+      body: [
+        "GCOC shares certain visual brand elements with Acureon Health LLC to signal a related ecosystem and shared origin. GCOC is not owned, controlled, or directed by Acureon Health LLC or any commercial entity; the organizations operate under separate boards and governance.",
+        "Transactions between GCOC and any related commercial entity are subject to the conflict-of-interest safeguards in GCOC’s Bylaws, including disclosure, recusal, and Board review. These related-party protections are the same safeguards summarized for sites in the Site Participation Agreement.",
+      ],
+    },
+    {
+      title: "Public documents",
+      body: [
+        "The following will be posted here as they become available: annual reports; the IRS determination letter, if recognition is granted; and Forms 990.",
+        "GCOC’s application for recognition of federal tax exemption under Section 501(c)(3) is pending. We will update this page when a determination is received.",
+      ],
     },
   ],
 } as const;
 
 export const footer = {
   brandLine: site.tagline,
-  description:
-    "Independent nonprofit research and data-governance organization. UBI Number: 606 248 708",
+  description: site.taxStatus,
   contactHeadline: "Contact",
-  contactLines: [
-    site.fullAddress,
-    "hello@gcoc.org",
-  ],
+  email: site.email,
+  address: site.fullAddress,
   links: [
-    { label: "Mission", href: "#mission" },
-    { label: "What We Do", href: "#what-we-do" },
-    { label: "Network", href: "#network" },
-    { label: "Leadership", href: "#leadership" },
-    { label: "Support", href: "#support" },
+    { label: "Mission", href: "/#mission" },
+    { label: "What We Do", href: "/#what-we-do" },
+    { label: "Network", href: "/#network" },
+    { label: "Leadership", href: "/#leadership" },
+    { label: "Governance and Transparency", href: "/governance/" },
+    { label: "Support", href: "/#support" },
   ],
   legalLinks: [
     { label: "Privacy", href: "#" },
     { label: "Terms", href: "#" },
-    { label: "Governance", href: "#" },
+    { label: "Governance and Transparency", href: "/governance/" },
   ],
   copyright:
     "© {year} Global Clinical Outcomes Collaborative. All rights reserved.",

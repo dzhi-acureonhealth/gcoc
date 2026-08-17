@@ -25,7 +25,7 @@ export function Hero() {
               aria-hidden
               className="h-1.5 w-1.5 rounded-full bg-green"
             />
-            501(c)(3) Nonprofit · Bellevue, WA
+            {site.heroBadge}
           </p>
           <h1
             id="hero-heading"

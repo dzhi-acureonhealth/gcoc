@@ -49,6 +49,9 @@ export function Approach() {
             </div>
           ))}
         </dl>
+        <p className="mt-6 max-w-3xl text-xs leading-relaxed text-white/70">
+          {approach.attribution}
+        </p>
         <figure className="mt-12 grid gap-6 lg:grid-cols-[1.1fr_1fr] lg:items-start">
           <blockquote className="relative rounded-2xl border border-white/15 bg-white/5 p-8 backdrop-blur">
             <QuoteIcon className="absolute right-6 top-6 h-8 w-8 text-aqua/70" />

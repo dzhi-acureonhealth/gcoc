@@ -7,7 +7,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-surface/85 backdrop-blur supports-[backdrop-filter]:bg-surface/70">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
         <Link
-          href="#top"
+          href="/#top"
           className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
           <Image
@@ -43,10 +43,10 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <Link
-            href="#support"
+            href="/#get-involved"
             className="hidden h-10 items-center justify-center rounded-full bg-cta px-5 text-sm font-semibold text-cta-foreground shadow-sm transition-colors hover:bg-cta-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:inline-flex"
           >
-            Support Our Mission
+            Get Involved
           </Link>
         </div>
       </div>
